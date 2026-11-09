@@ -169,3 +169,15 @@ cython_debug/
 
 # PyPI configuration file
 .pypirc
+
+# ---------------------------------------------------------------------------
+# LLM+MAP
+# Run outputs (plans, generated code, CSV results, intermediate planner files)
+results/
+tmp/
+wandb/
+*.csv
+
+# OS / editor
+.DS_Store
+.vscode/

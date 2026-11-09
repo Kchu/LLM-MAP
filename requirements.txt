@@ -1,0 +1,28 @@
+# Tested with Python 3.10
+# Planning
+unified-planning==1.2.0
+up-fmap==0.0.13          # FMAP multi-agent planner (needs Java on PATH)
+networkx>=3.4
+
+# LLMs
+openai>=1.88
+
+# Perception (OWLv2)
+torch>=2.7
+transformers>=4.57
+pillow
+opencv-python
+scikit-image
+matplotlib
+
+# Simulation / robot control: only for the NICOL scripts (main.py, plan_validation.py),
+# which additionally need the NICOL API (not yet open-sourced, see README)
+coppeliasim-zmqremoteapi-client
+pytorch-kinematics==0.7.5   # required by CycleIK
+transforms3d
+scipy
+numpy<2
+
+# Logging / results
+pandas
+wandb
